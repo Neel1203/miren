@@ -1,0 +1,273 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+}
+
+.navibar{
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-color: black;
+}
+
+#marker{
+    color:pink;
+    padding: 0px 10px;
+}
+
+.text{
+    color: pink;
+}
+
+navi{
+    flex: 1;
+    text-align: right;
+}
+
+navi uli lib{
+    list-style: none;
+    display : inline-block;
+    margin-right : 30px;
+    margin-top: 1px;
+}
+
+navi uli lib a{
+    text-decoration: none;
+    color : white;
+    font-size : 14px;
+}
+
+navi uli lib a:hover{
+    color : red;
+}
+
+ibutton{
+    color: white;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+ibutton:hover{
+    cursor: pointer;
+}
+
+.container{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/14/57/buildings-5141841_1280.jpg);
+    padding: 0px;
+    background-size: 100%;
+}
+
+.logo-nav{
+    width: 120px;
+    margin-left: 10px;
+}
+
+.navbar{
+    width : 100%;
+    display : flex;
+    align-items : centre;
+    list-style-type: none;
+}
+
+nav{
+    flex : 1;
+    text-align: right;
+    list-style-type: none;
+}
+
+nav ul li{
+    list-style-type: none;
+    display : inline-block;
+    margin-right : 30px;
+    margin-top: 1px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color : white;
+    font-size : 14px;
+    list-style-type: none;
+}
+
+nav ul li a:hover{
+    color : red;
+    list-style-type: none;
+}
+
+button{
+    width : 140px;
+    border : 0;
+    padding : 12px;
+    outline : none;
+    color : black;
+    background-image:linear-gradient(to right, #f857a6 0%, #f857a6  100%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.happy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+}
+
+.col-1{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.col-1 .logo{
+    width:50%;
+}
+
+.col-2{
+    flex-basis: 60%;
+    position: relative;
+    padding-left: 50px;
+    color: white;
+}
+
+.col-2 p{
+    display: inline;
+    padding: 0px 10px;
+}
+
+.map{
+    display: flex;
+    margin: none;
+}
+
+iframe{
+    width: 100%;
+}
+
+.middle{
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-48265.jpg);
+    padding:100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+}
+
+.line{
+    width: 150px;
+    height: 5px;
+    background: pink;
+    margin: 10px auto;
+}
+
+.row{
+    background-image: url(https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px;
+    margin: 70px;
+}
+
+.social-links{
+    height:20px;
+}
+
+.last .photo{
+    width: 10%;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1080px){
+    
+    nav ul{
+        width:100%;
+        top:100px;
+        right:75px;
+        z-index: 2;
+    }
+    
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+    }
+    
+    nav ul li a{
+        color:white;
+    }
+    
+    #menu{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    #toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+    }
+
+    #toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden ;
+    }
+
+    #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #toggle.on .two {
+    opacity: 0;
+    }
+
+    #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    #menu {
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 3px;
+    position: absolute;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    
+    .happy{
+        flex-direction: column;
+    }
+    
+    .row{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .middle{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+}
